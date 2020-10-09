@@ -247,7 +247,7 @@ class handling_iklan(object):
         self.url = self.data1[3]
         self.id_loop = self.data1[0]
         self.data_hitung = self.data1[2]
-        self.video = cv2.VideoCapture(fullpathvideo % (self.url))
+        self.video = cv2.VideoCapture(0)
         # self.s = SessionStore()
         s['id_loop'] = self.id_loop
         s['data_hitung'] = self.data_hitung
